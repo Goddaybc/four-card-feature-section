@@ -1,1 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size: 15px;
+}
+.container {
+  width: 100%;
+  max-width: 375px;
+  background-color: hsl(0, 0%, 98%);
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 2rem;
+}
+p {
+  color: hsl(229, 6%, 66%);
+}
+.info {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.info__h1 {
+  font-size: 1.3rem;
+  color: hsl(229, 6%, 66%);
+}
+.info h2 {
+  color: hsl(234, 12%, 34%);
+  margin: 0.5rem 0;
+}
+article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+article h1 {
+  color: hsl(234, 12%, 34%);
+}
+.card {
+  /* width: 300px; */
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px gray;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.card h1,
+p {
+  margin-top: 1rem;
+}
+.card img {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  margin-top: 2rem;
+}
+.supervisor {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+.supervisor:hover {
+  border-bottom: 5px solid hsl(212, 86%, 64%);
+}
+.team {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.team:hover {
+  border-bottom: 5px solid hsl(0, 78%, 62%);
+}
+.karma:hover {
+  border-bottom: 5px solid hsl(180, 62%, 55%);
+}
+.karma {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.calcularor:hover {
+  border-bottom: 5px solid hsl(34, 97%, 64%);
+}
+.calcularor {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
