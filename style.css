@@ -14,12 +14,6 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding: 20px;
   font-size: 15px;
-  /* I changed the display in the desktop view, and make sure it fits wit 100% width */
-  @media (min-width: 1024px) { 
-    display: initial;
-    width: 100%;
-  }
-
 }
 .container {
   width: 100%;
@@ -29,12 +23,6 @@ body {
   border-radius: 8px;
   margin-top: 20px;
   padding: 2rem;
-
-
-  @media (min-width: 1024px) { 
-    max-width: 1300px;
-    margin: 20px auto 0 auto;
-  }
 }
 
 p {
@@ -43,48 +31,20 @@ p {
 .info {
   text-align: justify;
   margin-bottom: 2rem;
-
-  /* Wit the nex selector "& p" I'm selecting a child p of class info */
-  & p{
-    @media (min-width: 1024px) { 
-      text-align: center;
-      width: 50%;
-      margin: 0 auto;
-    }
-  }
 }
 .info__h1 {
   font-size: 1.3rem;
   color: hsl(229, 6%, 66%);
-
-  @media (min-width: 1024px) { 
-    font-size: 2rem;
-    text-align: center;
-  }
 }
 .info h2 {
   color: hsl(234, 12%, 34%);
   margin: 0.5rem 0;
-
-  @media (min-width: 1024px) { 
-    font-size: 2rem;
-    text-align: center;
-    margin: 0;
-  }
 }
 article {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-
-  @media (min-width: 1024px) { 
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    gap: 10px;
-  }
 }
 article h1 {
   color: hsl(234, 12%, 34%);
@@ -101,7 +61,6 @@ article h1 {
   margin-bottom: 2rem;
 
   transition: border 0.2s;
-
 }
 
 .card h1,
@@ -116,21 +75,12 @@ p {
 }
 .supervisor {
   border-top: 5px solid hsl(212, 86%, 64%);
-  @media (min-width: 1024px) { 
-    grid-column: 1/2;
-    grid-row: 2/4;
-  }
 }
 .supervisor:hover {
   border-bottom: 5px solid hsl(212, 86%, 64%);
 }
 .team {
   border-top: 5px solid hsl(0, 78%, 62%);
-
-  @media (min-width: 1024px) { 
-    grid-column: 2/3;
-    grid-row: 1/3;
-  }
 }
 .team:hover {
   border-bottom: 5px solid hsl(0, 78%, 62%);
@@ -140,21 +90,12 @@ p {
 }
 .karma {
   border-top: 5px solid hsl(180, 62%, 55%);
-  @media (min-width: 1024px) { 
-    grid-column: 2/3;
-    grid-row: 3/5;
-  }
 }
 .calcularor:hover {
   border-bottom: 5px solid hsl(34, 97%, 64%);
 }
 .calcularor {
   border-top: 5px solid hsl(34, 97%, 64%);
-
-  @media (min-width: 1024px) { 
-    grid-column: 3/4;
-    grid-row: 2/4;
-  }
 }
 .attribution {
   font-size: 11px;
@@ -162,4 +103,52 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1024px) {
+  /* I changed the display in the desktop view, and make sure it fits wit 100% width */
+  body {
+    display: initial;
+    width: 100%;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+  }
+  .info__h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .info h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+  .info p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  article {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .supervisor {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .team {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .karma {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .calcularor {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
 }
