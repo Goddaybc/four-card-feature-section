@@ -62,7 +62,9 @@ article h1 {
 
   transition: border 0.2s;
 }
-
+img {
+  width: 40px;
+}
 .card h1,
 p {
   margin-top: 1rem;
@@ -71,7 +73,7 @@ p {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 .supervisor {
   border-top: 5px solid hsl(212, 86%, 64%);
